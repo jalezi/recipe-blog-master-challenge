@@ -1,1 +1,1 @@
-# recipe-page-master-challenge
+# recipe-blog-master-challenge
