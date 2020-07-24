@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --clrPrimaryText: #000;
+  --clrSecondaryText: #bdbdbd;
+  --clrTertiaryText: #333333;
+  --clrSpecialText: #f2994a;
+  --clrFooterText: #a9a9a9;
+
+  --ff-main: 'Montserrat', sans-serif;
+  --ff-headings: 'Playfair Display', serif;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-headings);
+}
+
+section {
+  max-width: 528px;
+}
+
+.main-container {
+  width: 95%;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+/* --- HEADER --- */
+
+.header-wrapper {
+  max-width: 600px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 1em;
+}
+
+.header-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.dots {
+  width: 5%;
+}
+
+.header-text {
+  font-family: var(--ff-main);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  width: 95%;
+  padding-left: 0.5em;
+}
+
+/* --- IMAGE --- */
+
+.main-image-wrapper {
+  max-width: 97vw;
+  /* margin-bottom: 2em; */
+}
+
+.main-image-wrapper > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* --- INFO --- */
+
+.cooking-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cooking-info-element-wrapper {
+  padding-top: 1em;
+}
+
+.cooking-info-yields {
+  width: 100%;
+}
+
+.cooking-info-title {
+  color: var(--clrSecondaryText);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 8px;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+
+.cooking-info-data {
+  color: var(--clrTertiaryText);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.cooking-info-yields i {
+  color: var(--clrSpecialText);
+}
+
+.cooking-info-yields p:nth-of-type(2) {
+  color: var(--clrSpecialText);
+}
+
+/*  --- INGREDIENTS --- */
+
+.ingredients {
+  margin-top: 1em;
+}
+
+.ingredients-title {
+  color: var(--clrTertiaryText);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.ingredient-title {
+  color: var(--clrTertiaryText);
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 1em;
+  margin-bottom: 0.8em;
+}
+
+.ingredients-info {
+  color: var(--clrTertiaryText);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.ingredients-info ul {
+  list-style-type: none;
+}
+
+.ingredients-info ul li {
+  padding-left: 20px;
+}
+
+.ingredients-info ul li span:not([class]) {
+  font-weight: bold;
+}
+
+.ingredient-wrapper {
+  position: relative;
+}
+
+.ingredient-wrapper input[type='checkbox'] {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.suggestions {
+  font-style: italic;
+}
+
+/*  --- INSTRUCTIONS --- */
+
+.instructions-title {
+  color: var(--clrTertiaryText);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+.instructions-step-wrapper {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.step-number {
+  text-align: center;
+  line-height: 24px;
+  font-family: var(--ff-headings);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  width: 36px;
+  height: 36px;
+  background-color: var(--clrSpecialText);
+  color: #fff;
+  border-radius: 6px;
+  align-self: flex-start;
+}
+
+.step-number p {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 28px;
+}
+
+.step-text {
+  padding-left: 1em;
+  width: 90%;
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.step-text span:not([class]) {
+  font-weight: bold;
+}
+
+.instructions a {
+  display: block;
+  color: var(--clrSecondaryText);
+  text-decoration: none;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+/* --- FOOTER --- */
+
+footer {
+  color: var(--clrFooterText);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  margin: 5rem 0 1rem;
+  color: var(--clrSecondaryText);
+}
+
+@media screen and (min-width: 768px) {
+  .main-image-wrapper {
+    margin-bottom: 2em;
+  }
+
+  .cooking-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .cooking-info {
+    width: 216px;
+    height: 361px;
+    flex-flow: column;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    padding: 1em 0;
+    text-align: center;
+    order: 2;
+  }
+
+  .ingredients {
+    order: 1;
+  }
+
+  .instructions {
+    width: 100%;
+    order: 3;
+  }
+}
